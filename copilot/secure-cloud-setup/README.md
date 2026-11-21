@@ -15,7 +15,7 @@ This guide describes a free, personal cloud setup focused on private access and 
 - **Backups**: Restic + local/external encrypted destination
 
 ## Security Baseline
-1. Keep the cloud service off the public internet (no open public ports).
+1. Keep cloud service ports off the public internet. If using WireGuard, allow only its UDP listener port; use Tailscale or a relay for zero inbound ports.
 2. Require VPN access before cloud login.
 3. Use unique long passwords and enable MFA.
 4. Disable guest/public sharing by default.
